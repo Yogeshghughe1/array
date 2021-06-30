@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main()
+{
+ int A[3][3]={{1,2,3},{4,5,6},{7,8,9}},i,j,*p=&A[0][0],>
+printf("input elements in matrix:");
+for(i=0;j<3;i++)
+{
+ for(j=0;j<3;j++)
+ {
+ printf("\n element -[%d],[%d]:%d",i,j,*p);
+ if(i==j)
+ {
+  sum=sum+(*p);
+ }
+ p++;
+}
+}
+printf("\n the matrix is:\n");
+for(i=0;i<3;i++)
+{
+ for(j=0;j<3;i++)
+ {
+  printf("%d",A[i][j]);
+ }
+ printf("\n");
+}
+printf("\n sum of all diagonal element=%d",sum);
+}
